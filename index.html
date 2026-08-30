@@ -3,21 +3,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Miguel | KR Soul</title>
+<title>Miguel | KR Soul - Dev</title>
 <style>
-body{background:#0d1117;color:#fff;font-family:Arial;text-align:center;padding:60px 20px;margin:0}
-h1{font-size:38px;margin-bottom:10px}
-p{color:#8b949e;font-size:18px}
-.btn{display:inline-block;margin-top:20px;padding:12px 28px;border:1px solid #58a6ff;color:#58a6ff;border-radius:30px;text-decoration:none;font-weight:bold}
-.btn:hover{background:#58a6ff;color:#000}
-.emoji{font-size:50px}
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0d1117;color:#e6edf3;font-family:'JetBrains Mono',monospace;min-height:100vh}
+.hero{text-align:center;padding:80px 20px 40px}
+.hero .flags{font-size:48px;animation:float 3s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+h1{font-size:42px;margin:20px 0 10px;letter-spacing:-1px}
+.subtitle{color:#8b949e;font-size:18px;margin-bottom:5px}
+.route{color:#58a6ff;font-size:16px;margin:15px 0 30px}
+.btn{display:inline-block;padding:12px 28px;border:1px solid #58a6ff;color:#58a6ff;border-radius:30px;text-decoration:none;font-weight:700;transition:.3s;margin:5px}
+.btn:hover{background:#58a6ff;color:#000;transform:scale(1.05)}
+.btn-solid{background:#58a6ff;color:#000}
+.btn-solid:hover{background:transparent;color:#58a6ff}
+section{max-width:700px;margin:40px auto;padding:0 20px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:20px;margin:15px 0;text-align:left}
+.card h3{color:#58a6ff;margin-bottom:8px}
+.tag{display:inline-block;background:#1f2937;border:1px solid #30363d;padding:4px 10px;border-radius:20px;font-size:12px;margin:4px 2px;color:#8b949e}
+footer{text-align:center;padding:40px;color:#484f58;font-size:12px}
 </style>
 </head>
 <body>
-<div class="emoji">🇧🇷🤝🇰🇷</div>
+<div class="hero">
+<div class="flags">🇧🇷🤝🇰🇷</div>
 <h1>Miguel | KR Soul</h1>
-<p>Estudante de ADS - Futuro Dev em Seul</p>
-<p>Rolim de Moura → Seul</p>
-<a class="btn" href="https://linktr.ee/MiguelKrSoul">Meus Links</a>
+<p class="subtitle">Estudante de ADS @ UNIR • 2º Período</p>
+<p class="route">Rolim de Moura, RO → Seul, KR • Objetivo 2028</p>
+<a class="btn btn-solid" href="https://linktr.ee/MiguelKrSoul">Meus Links</a>
+<a class="btn" href="https://github.com/miguelkrsoul">GitHub</a>
+</div>
+
+<section>
+<div class="card">
+<h3>🚀 Sobre mim</h3>
+<p style="color:#8b949e;line-height:1.6">Tenho 24 anos, estudante de Análise e Desenvolvimento de Sistemas. Aprendendo a programar do zero no celular e construindo meu caminho para trabalhar como dev em Seul. Foco atual: HTML, CSS, Git e lógica de programação.</p>
+</div>
+
+<div class="card">
+<h3>💻 Stack Atual</h3>
+<span class="tag">HTML5</span>
+<span class="tag">CSS3</span>
+<span class="tag">Git / GitHub</span>
+<span class="tag">Lógica de Programação</span>
+<span class="tag">Em breve: JavaScript</span>
+<span class="tag">Em breve: Python</span>
+</div>
+
+<div class="card">
+<h3>📂 Projetos</h3>
+<p style="margin-bottom:10px"><b>→ meu-portfolio-</b> - Meu primeiro site no ar com GitHub Pages. Feito 100% pelo celular.</p>
+<p style="color:#484f58;font-size:13px">Próximo: Calculadora em JS e Landing Page KR Soul</p>
+</div>
+
+<div class="card">
+<h3>🎯 Meta KR</h3>
+<p style="color:#8b949e;line-height:1.6">• Finalizar ADS na UNIR<br>• Dominar Inglês + Coreano básico<br>• Portfolio com 10 projetos<br>• Visto e primeira vaga em Seul</p>
+</div>
+</section>
+
+<footer>
+Built with 💙 in Rondônia - 2025<br>
+miguelkrsoul.github.io/meu-portfolio-
+</footer>
 </body>
 </html>
