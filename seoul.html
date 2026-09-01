@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>BR → KR | Miguel</title>
+<style>
+body { background: #0a0a0a; color: white; font-family: Arial; text-align: center; padding: 20px; }
+.card { background: #1a1a1a; border-radius: 15px; padding: 20px; margin: 20px auto; max-width: 400px; border: 1px solid #333; }
+h1 { color: #ff0055; }
+.seoul { color: #00d9ff; font-size: 28px; }
+.rolim { color: #00ff88; font-size: 28px; }
+</style>
+</head>
+<body>
+<h1>🇧🇷 Miguel | KR soul 🇰🇷</h1>
+<p>Estudante de ADS - Futuro em Seul</p>
+
+<div class="card">
+<h3>📍 Rolim de Moura - RO</h3>
+<div id="rolim" class="rolim">--:--:--</div>
+</div>
+
+<div class="card">
+<h3>📍 Seoul, Korea - Meu futuro</h3>
+<div id="seoul" class="seoul">--:--:--</div>
+<p>12 horas na frente 🇰🇷</p>
+</div>
+
+<div class="card">
+<p>나는 브라질에서 온 개발자입니다!</p>
+<p>서울에서 일하고 싶어요!</p>
+</div>
+
+<script>
+function update() {
+  const now = new Date();
+  document.getElementById('rolim').innerText = now.toLocaleTimeString('pt-BR');
+  const seoulTime = new Date(now.toLocaleString("en-US", {timeZone: "Asia/Seoul"}));
+  document.getElementById('seoul').innerText = seoulTime.toLocaleTimeString('pt-BR');
+}
+setInterval(update, 1000);
+update();
+</script>
+</body>
+</html>
