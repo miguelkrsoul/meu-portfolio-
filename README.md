@@ -1,7 +1,4 @@
 # 👋 Miguel | KR Soul 🇧🇷🇰🇷
-Estudante de ADS - Futuro Dev em Seul
+Systems Student - Future Dev in Seoul
 
-Portfólio e projetos: https://linktr.ee/MiguelKrSoul
-
-### Projetos em destaque
-📚 [Biblioteca Online - Livro API](https://github.com/miguelkrsoul/livro-api)
+PortfOlio: https://linktr.ee/MiguelKrSoul
